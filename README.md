@@ -16,8 +16,6 @@ ROS 2 (Robot Operating System 2) is the next-generation framework for building r
 
 This tutorial guides you through implementing the Stonefish application using ROS 2. Stonefish is particularly well-suited for aquatic environments, and we'll explore its functionalities in this context.
 
-Getting Started with ROS 2 - Humble Hawksbill
-
 Before diving in, let's install ROS 2 - Humble Hawksbill. Here are some helpful resources:
 
 - **Official ROS 2 Documentation:** This comprehensive resource provides detailed installation instructions for various platforms. [ROS2 Documentation](https://docs.ros.org/en/humble/index.html)
