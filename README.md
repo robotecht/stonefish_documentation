@@ -1,15 +1,15 @@
-# stonefish_documentation
-Documentation for installing and using stonefish using ROS2.
+# Stonefish Simulator:
+Stonefish is a powerful C++ library designed specifically for simulating and visualizing marine robots. It excels at rendering realistic underwater environments and the interactions between robots and their surroundings.  This makes Stonefish ideal for researchers and developers working on aquatic robotics projects.  This tutorial will guide you through using Stonefish to create real-time, 3D visualizations of your robot data.
 
-# System Requirement
+## System Requirements
 
-**Processor:** Multi-core processor 
+Stonefish requires a modern computer for smooth operation. Here's a breakdown of the minimum specifications:
 
-**Minimum Graphics Card:** Nvidia GeForce 400 series, AMD Radeon HD 5000 series 
+- **Processor:** Multi-core processor (recommended for real-time performance)
+- **Graphics Card:** Nvidia GeForce 400 series or AMD Radeon HD 5000 series (or equivalent with OpenGL 4.3 support)
+- **Operating System:** Linux Ubuntu 22.04.4 LTS - Installation Guide: [Ubuntu Installation](https://www.youtube.com/watch?v=oNEwEQ0uU1Y)
 
-**Operating System:** Linux Ubuntu (22.04.4 LTS) - [Installation Guide](https://www.youtube.com/watch?v=oNEwEQ0uU1Y)
-
-The minimum requirement is the support for OpenGL 4.3. If the GPU is not fulfilling the requirements, it is still possible to run simulation in console mode, with limited functionality. 
+**Note:** While a powerful GPU is recommended for full functionality, Stonefish can run basic simulations in console mode with a less capable graphics card.
 
 # ROS2
 ROS 2 (Robot Operating System 2) is the next-generation framework for building robot applications. It empowers users and developers to leverage a rich ecosystem of libraries and tools, streamlining the development process.
