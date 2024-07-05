@@ -14,5 +14,5 @@ The minimum requirement is the support for OpenGL 4.3. If the GPU is not fulfill
 # ROS2
 ROS2 is the newer version of Robot Operating System (ROS), which enables the users and developers, use the available libraries and tools in the robotic applications. This tutorial is developed to implement Stonefish application using ROS2, and to use its funtionalityies for the aquatic applications. To start with, please install ROS2 - Humble Hawkesbill following the instaructions as mentioned:
 - [ROS2 Documentation](https://docs.ros.org/en/humble/index.html)
-- [ROS2 Installation Video](https://www.youtube.com/watch?v=0aPbWsyENA8&list=PLLSegLrePWgJudpPUof4-nVFHGkB62Izy)
+- [ROS2 Tutorial](https://www.youtube.com/watch?v=0aPbWsyENA8&list=PLLSegLrePWgJudpPUof4-nVFHGkB62Izy)
 
