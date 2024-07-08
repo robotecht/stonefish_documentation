@@ -21,5 +21,5 @@ Before diving in, let's install ROS 2 - Humble Hawksbill. Here are some helpful 
 - [**Official ROS 2 Documentation:**](https://docs.ros.org/en/humble/index.html) This comprehensive resource provides detailed installation instructions for various platforms.
 - [**ROS 2 Tutorial (Video):**](https://www.youtube.com/watch?v=0aPbWsyENA8&list=PLLSegLrePWgJudpPUof4-nVFHGkB62Izy) This video tutorial offers a visual guide to installing ROS 2 - Humble Hawksbill.
 
-- **Note:** Use the information in the video as a general guideline for installation, follow the ROS2 documentation as the main guide.
+**Note:** Use the information in the video as a general guideline for installation, follow the ROS2 documentation as the main guide.
 
