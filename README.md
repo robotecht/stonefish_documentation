@@ -54,8 +54,11 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
   ```bash
   sudo apt install libsdl2-dev
   ```
-> **NOTE:** This software is still under development.
-
+> **NOTE:** SDL2 library may need a small fix to the CMake configuration file, to avoid build errors. Remove a space after -lSDL2 in /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake.
+  ```bash
+  sudo xdg-open /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake
+  ```
+  This will open the sdl2-config.cmake file. Press ctrl + h to open the replacement window, and replace "lSDL2 " with "lSDL2", then select replace all option.
 
 
 
