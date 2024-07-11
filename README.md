@@ -23,3 +23,9 @@ Before diving in, let's install ROS 2 - Humble Hawksbill. Here are some helpful 
 
 **Note:** Use the information in the video as a general guideline for installation, follow the ROS2 documentation as the main guide.
 
+## Stonefish Simulator Installation
+
+To install the updated version of the stonefish follow the instructions given in the repository:
+
+[**Stonefish - Heriot-Watt Repository**](https://github.com/oceansystemslab/HeriotWattStonefishSim)
+
