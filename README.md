@@ -66,6 +66,7 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
   ```
 
 **Stonefish Installation**
+
 Clone the Github repository of the updated Stonefish simulator
 
 ```bash
