@@ -49,7 +49,11 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
 - Install [OpenGL Mathematics](https://github.com/g-truc/glm) (libglm-dev, version >= 0.9.9.0)
   ```bash
   sudo apt install libglm-dev
-  
+  ```
+- Install [SDL2](https://github.com/libsdl-org/SDL)(libsdl2-dev)
+  ```bash
+  sudo apt install libsdl2-dev
+  ```
 
 
 
