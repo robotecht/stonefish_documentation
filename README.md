@@ -67,7 +67,7 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
 
 **Stonefish Installation**
 
-Clone the Github repository of the Stonefish simulator
+Clone the Github repository of the Stonefish simulator into your ros2 workspace
 ```bash
 git clone "https://github.com/patrykcieslak/stonefish.git"
 ```
@@ -89,6 +89,18 @@ Setup install
 ```bash
 sudo make install
 ```
+Navigate to the stonefish directory
+```bash
+cd ..
+```
+Build the package
+```bash
+colcon build
+```
+
+
+
+
 
 ```bash
 git clone https://github.com/oceansystemslab/HeriotWattStonefishSim.git
