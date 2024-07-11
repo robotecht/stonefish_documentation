@@ -32,8 +32,7 @@ To install the updated version of the stonefish follow the instructions given in
 ### NVIDIA Settings
 **Nvidia Performance Mode (for Native Ubuntu version)**
 Install nvidia-prime
-'''bash
+```bash
 sudo apt install nvidia-prime
-'''
-
+...
 
