@@ -54,6 +54,7 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
   ```bash
   sudo apt install libsdl2-dev
   ```
+> **NOTE:** This software is still under development.
 
 
 
