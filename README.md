@@ -34,5 +34,6 @@ To install the updated version of the stonefish follow the instructions given in
 Install nvidia-prime
 ```bash
 sudo apt install nvidia-prime
-...
+```
+
 
