@@ -60,6 +60,11 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
   ```
  > This will open the sdl2-config.cmake file. Press **Ctrl** + **H** to open the replacement window, and replace "lSDL2 " with "lSDL2", then select replace all option.
 
+- Install [Freetype](https://freetype.org/)(libfreetype6-dev)
+  ```bash
+  sudo apt install libfreetype6-dev
+  ```
+
 
 
 
