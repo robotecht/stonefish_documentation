@@ -36,4 +36,18 @@ Install nvidia-prime
 sudo apt install nvidia-prime
 ```
 
+And then set nvidia in performance mode:
+```bash
+sudo prime-select nvidia
+```
+
+### Installation
+
+To install stonefish Library follow the instructions at: https://stonefish.readthedocs.io/
+
+
+
+
+
+
 
