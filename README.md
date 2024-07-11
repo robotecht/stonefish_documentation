@@ -98,10 +98,14 @@ Build the package
 colcon build
 ```
 
+### Updated stonefish library installation
 
+Navigate to home directory
+```bash
+cd ~
+```
 
-
-
+Clone the [HeriotWattStonefishSim](https://github.com/oceansystemslab/HeriotWattStonefishSim) library
 ```bash
 git clone https://github.com/oceansystemslab/HeriotWattStonefishSim.git
 ```
