@@ -45,6 +45,12 @@ sudo prime-select nvidia
 
 To install stonefish Library follow the instructions at: https://stonefish.readthedocs.io/
 
+**Dependencies**
+- Install [OpenGL Mathematics](https://github.com/g-truc/glm) (libglm-dev, version >= 0.9.9.0)
+  ```bash
+  sudo apt install libglm-dev
+  
+
 
 
 
