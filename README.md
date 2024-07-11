@@ -72,7 +72,7 @@ Clone the Github repository of the updated Stonefish simulator
 ```bash
 git clone https://github.com/oceansystemslab/HeriotWattStonefishSim.git
 ```
-Or Setup the SSH authentication for github and use
+Or Setup the [SSH authentication](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for github and use
 ```bash
 git clone git@github.com:oceansystemslab/HeriotWattStonefishSim.git
 ```
