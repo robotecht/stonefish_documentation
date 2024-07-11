@@ -58,7 +58,7 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
   ```bash
   sudo xdg-open /usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake
   ```
-  This will open the sdl2-config.cmake file. Press **Ctrl** + **H** to open the replacement window, and replace "lSDL2 " with "lSDL2", then select replace all option.
+ > This will open the sdl2-config.cmake file. Press **Ctrl** + **H** to open the replacement window, and replace "lSDL2 " with "lSDL2", then select replace all option.
 
 
 
