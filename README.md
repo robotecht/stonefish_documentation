@@ -67,7 +67,28 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
 
 **Stonefish Installation**
 
-Clone the Github repository of the updated Stonefish simulator
+Clone the Github repository of the Stonefish simulator
+```bash
+git clone "https://github.com/patrykcieslak/stonefish.git"
+```
+Open stonefish directory
+```bash
+cd stonefish
+```
+Create the build directory
+```bash
+mkdir build
+cd build
+cmake ..
+```
+Set the number of CPU cores (X) to be used for the build. (Replace X with the number of cores)
+```bash
+make -jX
+```
+Setup install
+```bash
+sudo make install
+```
 
 ```bash
 git clone https://github.com/oceansystemslab/HeriotWattStonefishSim.git
