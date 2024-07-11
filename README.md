@@ -65,6 +65,13 @@ To install stonefish Library follow the instructions at: https://stonefish.readt
   sudo apt install libfreetype6-dev
   ```
 
+**Stonefish Installation**
+Clone the Github repository of the updated Stonefish simulator
+
+```bash
+git clone https://github.com/oceansystemslab/HeriotWattStonefishSim.git
+```
+
 
 
 
