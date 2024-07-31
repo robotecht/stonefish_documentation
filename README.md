@@ -84,6 +84,7 @@ cmake ..
 Set the number of CPU cores (X) to be used for the build. (Replace X with the number of cores)
 ```bash
 make -jX
+make all
 ```
 Setup install
 ```bash
