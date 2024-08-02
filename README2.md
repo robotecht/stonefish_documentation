@@ -87,7 +87,7 @@ colcon build --packages-select stonefish_ros2
 Build cola2_msg package
 
 ```bash
-colcon build --packages-select cola2_msgs
+colcon build --packages-select cola2_msgs_ros2
 ```
 Source the installation and make it readable for other packages
 ```bash
@@ -95,7 +95,7 @@ source install/setup.bash
 ```
 Build cola2_stonefish package
 ```bash
-colcon build --packages-select cola2_stonefish
+colcon build --packages-select cola2_stonefish_ros2
 ```
 Source the installation again
 ```bash
