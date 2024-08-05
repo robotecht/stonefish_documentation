@@ -25,9 +25,11 @@ Before diving in, let's install ROS 2 - Humble Hawksbill. Here are some helpful 
 
 ## Stonefish Simulator Installation
 
-To install the updated version of the stonefish follow the instructions given in the repository:
+The updated stonefish simulator is available in the following repository:
 
 [**Stonefish - Heriot-Watt Repository**](https://github.com/oceansystemslab/HeriotWattStonefishSim)
+
+Follow the instructions below to install the simulator in your linux system.
 
 ### NVIDIA Settings
 **Nvidia Performance Mode (for Native Ubuntu version)**
@@ -43,7 +45,7 @@ sudo prime-select nvidia
 
 ### Installation
 
-To install stonefish Library follow the instructions at: https://stonefish.readthedocs.io/
+The instructions are adapted from the original stonefish repository: https://stonefish.readthedocs.io/
 
 **Dependencies**
 - Install [OpenGL Mathematics](https://github.com/g-truc/glm) (libglm-dev, version >= 0.9.9.0)
