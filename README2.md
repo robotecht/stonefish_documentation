@@ -72,13 +72,15 @@ The instructions are adapted from the original stonefish repository: https://sto
 Create a workspace
 
 ```bash
-mkdir -p stonefish_ws/src
+mkdir -p stonefish_ros2_ws/src
 ```
 Clone the Heriot-Watt Stonefish simulator repository
 ```bash
 git clone git@github.com:oceansystemslab/HeriotWattStonefishSim.git
 ```
 Copy the cola2_msgs_ros2,cola2_stonefish_ros2 and stonefish_ros2 into stonefish_ws/src folder
+
+Copy stonefish folder outside this directory and build this following the directions in [Stonefish Repository](https://github.com/patrykcieslak/stonefish)
 
 Build stonefish_ros2 package in the stonefish_ws workspace
 
