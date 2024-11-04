@@ -125,8 +125,36 @@ Finally use glxgears and the performance monitor in windows to be sure that it i
 
 ## Installation
 
-To install stonefish Library follow the instructions at: https://stonefish.readthedocs.io/
+**Stonefish Installation**
 
+Create a workspace
+
+```bash
+mkdir -p stonefish_ros2_ws/src
+```
+Clone the Heriot-Watt Stonefish simulator repository Or use the package shared with you
+```bash
+git clone git@github.com:oceansystemslab/HeriotWattStonefishSim.git
+```
+Copy the cola2_msgs_ros2,cola2_stonefish_ros2 and stonefish_ros2 into stonefish_ws/src folder
+
+Navigate to stonefish directory and build this following the directions in [Stonefish Repository](https://github.com/patrykcieslak/stonefish)
+
+Build packages in the stonefish_ws workspace
+
+```bash
+cd ~/stonefish_ws
+colcon build
+```
+Source the installation again
+```bash
+source install/setup.bash
+```
+Now Stonefish ros2 installation is completed
+Launch the simulator environment using the available launch files in the library
+```bash
+ros2 launch cola2_stonefish bluerov_fls_simulation.launch.py
+```
 Then put stonefish_ros, cola2_msgs and cola2_stonefish in your catkin workspace's src folder. Install pybind11 via: 
 ```bash
 apt install python3-pybind11
@@ -144,19 +172,19 @@ prime-select nvidia
 ## Instructions
 To launch bluerov sim :
 ```bash
-roslaunch cola2_stonefish bluerov_simulation.launch 
+ros2 launch cola2_stonefish bluerov_simulation.launch 
 ```
 To launch blueboat and bluerov sim :
 ```bash
-roslaunch cola2_stonefish asv_usv_sim.launch 
+ros2 launch cola2_stonefish asv_usv_sim.launch 
 ```
 To move the bluerov use thrusters:
 ```bash
-rostopic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.01, 0.01, 0.01, 0.01, 0.4, 0.4]}'
+ros2 topic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.01, 0.01, 0.01, 0.01, 0.4, 0.4]}'
 ```
 To move the blueboat use thrusters:
 ```bash
-rostopic pub /blueboat/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.01, 0.01]}'
+ros2 topic pub /blueboat/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.01, 0.01]}'
 ```
 Thrusters order is the same as in the scenario file
 
@@ -174,25 +202,25 @@ You can access the different topics and check them. You just need to define them
 ## Examples : BlueROV
 To go down:
 ```bash
-rostopic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.0, 0.0, 0.0, 0.0, 0.7, 0.7]}'
+ros2 topic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.0, 0.0, 0.0, 0.0, 0.7, 0.7]}'
 ```
 Stay at a stable depth:
 ```bash
-rostopic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.0, 0.0, 0.0, 0.0, 0.4, 0.4]}'
+ros2 topic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.0, 0.0, 0.0, 0.0, 0.4, 0.4]}'
 ```
 ## Examples : BlueROV Stereo
 To use the StereoCamera config, launch
 ```bash
-roslaunch cola2_stonefish bluerov_stereo_simulation.launch
+ros2 launch cola2_stonefish bluerov_stereo_simulation.launch
 ```
 ## Examples : BlueROV FLS
 To use the FLS config, launch
 ```bash
-roslaunch cola2_stonefish bluerov_fls_sim.launch
+ros2 launch cola2_stonefish bluerov_fls_sim.launch
 ```
 
 ## Instructions OpenGym
 To launch bluerov opengym :
 ```bash
-roslaunch cola2_stonefish bluerov_simulation_opengym.launch 
+ros2 launch cola2_stonefish bluerov_simulation_opengym.launch 
 ```
