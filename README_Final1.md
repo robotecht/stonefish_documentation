@@ -108,3 +108,91 @@ Essence
 ```bash
 ros2 launch cola2_stonefish essence.launch.py
 ```
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+## WSL2 Version
+In order to use stonefish within wsl2 you should:
+- put gpu in nvidia performance mode in the nvidia control panel in the global parameters and  set opengl to use the nvidia gpu
+- then launch wsl and write: 
+```bash
+sudo add-apt-repository ppa:kisak/kisak-mesa
+sudo apt-get dist-upgrade
+sudo apt install mesa-utils
+export MESA_D3D12_DEFAULT_ADAPTER_NAME=NVIDIA
+sudo apt install freeglut3-dev
+```
+Finally use glxgears and the performance monitor in windows to be sure that it is using the GPU
+
+## Installation
+
+To install stonefish Library follow the instructions at: https://stonefish.readthedocs.io/
+
+Then put stonefish_ros, cola2_msgs and cola2_stonefish in your catkin workspace's src folder. Install pybind11 via: 
+```bash
+apt install python3-pybind11
+```
+Finally build stonefish_ros and cola2_stonefish
+#### Nvidia Performance Mode (for Native Ubuntu version)
+Install nvidia-prime 
+```bash
+apt install nvidia-prime
+```
+And then set nvidia in performance mode:
+```bash
+prime-select nvidia
+```
+## Instructions
+To launch bluerov sim :
+```bash
+roslaunch cola2_stonefish bluerov_simulation.launch 
+```
+To launch blueboat and bluerov sim :
+```bash
+roslaunch cola2_stonefish asv_usv_sim.launch 
+```
+To move the bluerov use thrusters:
+```bash
+rostopic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.01, 0.01, 0.01, 0.01, 0.4, 0.4]}'
+```
+To move the blueboat use thrusters:
+```bash
+rostopic pub /blueboat/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.01, 0.01]}'
+```
+Thrusters order is the same as in the scenario file
+
+## Sensors
+Stonefish comes with many sensors as explained in : https://stonefish.readthedocs.io/en/latest/sensors.html
+You can access the different topics and check them. You just need to define them as written in the above documentation and add in the scenario file a rospublisher element to the sensor as:
+```xml
+<sensor name="gps" type="gps" rate="1.0">
+        <link name="Vehicle"/>
+        <origin rpy="0.0 0.0 0.0" xyz="0 0 -0.74"/>
+        <noise ned_position="0.5"/>
+        <ros_publisher topic="/bluerov/navigator/gps"/>
+</sensor>
+```
+## Examples : BlueROV
+To go down:
+```bash
+rostopic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.0, 0.0, 0.0, 0.0, 0.7, 0.7]}'
+```
+Stay at a stable depth:
+```bash
+rostopic pub /bluerov/controller/thruster_setpoints_sim std_msgs/Float64MultiArray '{data:[0.0, 0.0, 0.0, 0.0, 0.4, 0.4]}'
+```
+## Examples : BlueROV Stereo
+To use the StereoCamera config, launch
+```bash
+roslaunch cola2_stonefish bluerov_stereo_simulation.launch
+```
+## Examples : BlueROV FLS
+To use the FLS config, launch
+```bash
+roslaunch cola2_stonefish bluerov_fls_sim.launch
+```
+
+## Instructions OpenGym
+To launch bluerov opengym :
+```bash
+roslaunch cola2_stonefish bluerov_simulation_opengym.launch 
+```
