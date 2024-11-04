@@ -74,32 +74,19 @@ Create a workspace
 ```bash
 mkdir -p stonefish_ros2_ws/src
 ```
-Clone the Heriot-Watt Stonefish simulator repository
+Clone the Heriot-Watt Stonefish simulator repository Or use the package shared with you
 ```bash
 git clone git@github.com:oceansystemslab/HeriotWattStonefishSim.git
 ```
 Copy the cola2_msgs_ros2,cola2_stonefish_ros2 and stonefish_ros2 into stonefish_ws/src folder
 
-Copy stonefish folder outside this directory and build this following the directions in [Stonefish Repository](https://github.com/patrykcieslak/stonefish)
+Navigate to stonefish directory and build this following the directions in [Stonefish Repository](https://github.com/patrykcieslak/stonefish)
 
-Build stonefish_ros2 package in the stonefish_ws workspace
+Build packages in the stonefish_ws workspace
 
 ```bash
 cd ~/stonefish_ws
-colcon build --packages-select stonefish_ros2
-```
-Build cola2_msg package
-
-```bash
-colcon build --packages-select cola2_msgs_ros2
-```
-Source the installation and make it readable for other packages
-```bash
-source install/setup.bash
-```
-Build cola2_stonefish package
-```bash
-colcon build --packages-select cola2_stonefish_ros2
+colcon build
 ```
 Source the installation again
 ```bash
@@ -110,10 +97,14 @@ Launch the simulator environment using the available launch files in the library
 ```bash
 ros2 launch cola2_stonefish bluerov_fls_simulation.launch.py
 ```
+
 ![image](https://github.com/user-attachments/assets/1cf0c767-9942-4081-8d2e-2932d2235f08)
 
-
-
-
-
-
+Bluevolta
+```bash
+ros2 launch cola2_stonefish bluevolta.launch.py
+```
+Essence
+```bash
+ros2 launch cola2_stonefish essence.launch.py
+```
